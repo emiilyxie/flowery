@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.small-flower {
+  width: 100px;
+  height: 200px;
+  flex: 1 0 25%;
+}
+
+.flower-container {
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}

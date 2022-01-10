@@ -18,26 +18,55 @@ import egg from '../img/crochet-img/egg.jpg';
 import peas from '../img/crochet-img/peas.jpg';
 import seal from '../img/crochet-img/seal.jpg';
 import snowowl from '../img/crochet-img/snowowl.jpg';
+import { Navigate } from 'react-router-dom';
 
 export function Empyrean() {
   useEffect(() => {
-    window.location.href = "https://github.com/amyxlase/Project-Sapphire";  }, []);
+    //window.location.href = "https://github.com/amyxlase/Project-Sapphire";  
+    window.open("https://github.com/amyxlase/Project-Sapphire", '_blank').focus();
+  }, []);
   
-  return(<div>Redirect to https://github.com/amyxlase/Project-Sapphire</div>);
+  return(<Navigate to="/" />);
 }
 
 export function MusicDay() {
   useEffect(() => {
-    window.location.href = "http://musicday.emily.xie.fm";  }, []);
+    window.location.href = "http://musicday.emily.xie.fm"; 
+    //window.open("http://musicday.emily.xie.fm", '_blank').focus();
+  }, []);
   
-  return(<div>Redirect to http://musicday.emily.xie.fm</div>);
+    return(
+      <div>
+        <NavSect />
+        <H1>Music Day</H1>
+        <BodyText>If not redirected to http://musicday.emily.xie.fm,
+          click <SimpleLink href="http://musicday.emily.xie.fm">here</SimpleLink>.
+        </BodyText>
+        <Footer />
+
+        <Navigate to="/" />
+      </div>
+    );
 }
 
 export function Jazzcats() {
   useEffect(() => {
-    window.location.href = "http://jazzcats.emily.xie.fm";  }, []);
+    window.location.href = "http://jazzcats.emily.xie.fm";  
+    //window.open("http://jazzcats.emily.xie.fm", '_blank').focus(); 
+  }, []);
   
-  return(<div>Redirect to http://musicday.emily.xie.fm</div>);
+    return(
+      <div>
+        <NavSect />
+        <H1>Jazzcats</H1>
+        <BodyText>If not redirected to http://jazzcats.emily.xie.fm,
+          click <SimpleLink href="http://jazzcats.emily.xie.fm">here</SimpleLink>.
+        </BodyText>
+        <Footer />
+
+        <Navigate to="/" />
+      </div>
+    );
 }
 
 export function Crochet() {

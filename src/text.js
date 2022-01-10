@@ -132,7 +132,7 @@ function ImageCaption(props) {
 
 function SimpleLink(props) {
   return(
-    <a href={props.href} className="underline--magical" target="_blank">
+    <a href={props.href} className="underline--magical" target="_blank" rel="noreferrer">
       {props.children}
     </a>
   )

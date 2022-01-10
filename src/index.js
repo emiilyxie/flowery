@@ -7,8 +7,9 @@ import { Crochet, Music, MusicDay, Jazzcats } from "./routes/activities";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,
          Routes,
-         Route
-       } from "react-router-dom"
+         Route,
+         Navigate
+       } from "react-router-dom";
 
 const reload = () => window.location.reload();
 

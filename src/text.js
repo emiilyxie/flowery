@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import resume from "./file/emilyxie-resume-f21.pdf";
+import resume from "./file/emilyxie-resume-s22.pdf";
 
 
 function MainName() {
@@ -22,7 +22,7 @@ function SubHead() {
 function Activity(props) {
   return (
     <div className="activity">
-      <a className="title underline--magical" href={props.link}>{props.title}</a>
+      <div className="title"><Link className="underline--magical" to={props.link}>{props.title}</Link></div>
       <div className="desc">{props.desc}</div>
     </div>
   );

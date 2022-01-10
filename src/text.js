@@ -20,12 +20,22 @@ function SubHead() {
 }
 
 function Activity(props) {
-  return (
-    <div className="activity">
-      <div className="title"><Link className="underline--magical" to={props.link}>{props.title}</Link></div>
-      <div className="desc">{props.desc}</div>
-    </div>
-  );
+  if (props.ext) {
+    return (
+      <div className="activity">
+        <div className="title"><SimpleLink href={props.link}>{props.title}</SimpleLink></div>
+        <div className="desc">{props.desc}</div>
+      </div>
+    )
+  }
+  else {
+    return (
+      <div className="activity">
+        <div className="title"><Link className="underline--magical" to={props.link}>{props.title}</Link></div>
+        <div className="desc">{props.desc}</div>
+      </div>
+    );
+  }
 }
 
 function NavSect() {

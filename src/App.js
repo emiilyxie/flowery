@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom'
 import { FullFlower, FlowerGrid } from './flower';
 import { MainName, SubHead, Activity, 
          NavSect, Contact, Footer } from './text';
+
 import ismrm from "./file/ismrm-submission.pdf";
 import oarsi from "./file/oarsi-submission.pdf";
+         
 
 function App() {
   return (
@@ -44,6 +46,7 @@ function ActivitiesSect() {
         <div className="heading2 uppercase">Projects</div>
         <Activity 
           title="Empyrean"
+          ext={true}
           link="https://github.com/amyxlase/Project-Sapphire"
           desc="MMO game developed with CMU Game Creation Society"/>
         <Activity 
@@ -52,10 +55,12 @@ function ActivitiesSect() {
           desc="Generative background music application"/>
         <Activity 
           title="Statistical Shape Modeling of Knee Menisci"
+          ext={true}
           link={oarsi}
           desc="Ongoing research project at UCSF"/>
         <Activity 
           title="Deep Learning and Brain Imaging"
+          ext={true}
           link={ismrm}
           desc="Summer research project at UCSF"/>
         <Activity 

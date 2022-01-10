@@ -19,6 +19,13 @@ import peas from '../img/crochet-img/peas.jpg';
 import seal from '../img/crochet-img/seal.jpg';
 import snowowl from '../img/crochet-img/snowowl.jpg';
 
+export function Empyrean() {
+  useEffect(() => {
+    window.location.href = "https://github.com/amyxlase/Project-Sapphire";  }, []);
+  
+  return(<div>Redirect to https://github.com/amyxlase/Project-Sapphire</div>);
+}
+
 export function MusicDay() {
   useEffect(() => {
     window.location.href = "http://musicday.emily.xie.fm";  }, []);

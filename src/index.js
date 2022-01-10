@@ -2,11 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { About, Template, ComingSoon } from "./routes/page";
+import { Crochet, Music, MusicDay, Jazzcats } from "./routes/activities";
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter,
+         Routes,
+         Route
+       } from "react-router-dom"
+
+const reload = () => window.location.reload();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/template" element={<Template />} />
+        <Route path="/comingsoon" element={<ComingSoon />} />
+
+        <Route path="/activities/musicday" element={<MusicDay />} />
+        <Route path="/activities/jazzcats" element={<Jazzcats />} />
+        <Route path="/activities/music" element={<Music />} />
+        <Route path="/activities/crochet" element={<Crochet />} />
+        <Route path="/activities/art" element={<ComingSoon />} />
+        <Route path="/activities/archive" element={<ComingSoon />} />
+      </Routes>
+  </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

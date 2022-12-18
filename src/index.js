@@ -11,8 +11,6 @@ import { BrowserRouter,
          Navigate
        } from "react-router-dom";
 
-const reload = () => window.location.reload();
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

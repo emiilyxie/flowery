@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Navigate } from 'react-router-dom';
 
 import { NavSect, H1, H2, BodyText,
   BodyImage, ImageCaption, SimpleLink,
@@ -18,7 +19,8 @@ import egg from '../img/crochet-img/egg.jpg';
 import peas from '../img/crochet-img/peas.jpg';
 import seal from '../img/crochet-img/seal.jpg';
 import snowowl from '../img/crochet-img/snowowl.jpg';
-import { Navigate } from 'react-router-dom';
+
+import musicvibes from "../img/sittin.png"
 
 export function Empyrean() {
   useEffect(() => {
@@ -111,6 +113,8 @@ export function Music() {
     <BodyText>
       Also, I've recently become interested in music production. Spotify EP coming soon.
     </BodyText>
+    <BodyImage  src={musicvibes}/>
+    <Footer />
     </div>
   );
 }
